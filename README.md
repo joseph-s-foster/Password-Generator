@@ -2,9 +2,6 @@
 
 ## Description
 
-Using JavaScript, the user can select uppercase, lowercase, numbers, and/or special characters to randomly generate a password in length between 8 and 128 characters.
-
-- Linked JavaScript to the HTML file
 - Created a prompt for the user to select password length
 - Created an alert if the password length is not within the boundary conditions
 - Created variables to include or exclude character type
@@ -13,7 +10,7 @@ Using JavaScript, the user can select uppercase, lowercase, numbers, and/or spec
 - Created a function for generating a password given the selected criteria
 
 ## Link to Site
-
+https://joseph-s-foster.github.io/Password-Generator/
 
 ## Screenshot
 ![Screenshot of webpage](./assets/screenshot.png)

@@ -12,7 +12,7 @@ function generatePassword() {
   var hasSpecialCharacter = confirm("Select OK to include special characters.")
 
   if (!hasUppercase && !hasLowercase && !hasNumber && !hasSpecialCharacter ) {
-    alert("Password must include uppercase, lowercase, numberical, or special characters.")
+    alert("Password must include uppercase, lowercase, numerical, or special characters.")
     return null;
   }
 

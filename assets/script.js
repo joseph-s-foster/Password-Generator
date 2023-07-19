@@ -11,39 +11,36 @@ function generatePassword() {
   var hasNumber = confirm("Select OK to include numerical characters.")
   var hasSpecialCharacter = confirm("Select OK to include special characters.")
 
-  if (!hasUppercase && !hasLowercase && !hasNumber && !hasSpecialCharacter ) {
+  if (!hasUppercase && !hasLowercase && !hasNumber && !hasSpecialCharacter) {
     alert("Password must include uppercase, lowercase, numerical, or special characters.")
     return null;
   }
 
-  var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  var lowercase = "abcdefghijklmnopqrstuvwxyz";
-  var number = "0123456789";
-  var specialCharacter = "!@#$%^&*()";
+  var array = ["ABCDEFGHIJKLMNOPQRSTUVWXYZ", "abcdefghijklmnopqrstuvwxyz", "0123456789", "!@#$%^&*()"];
   var chosenCharacters = "";
   var password = "";
 
   if (hasUppercase) {
-    chosenCharacters += uppercase
+    chosenCharacters += array[0]
   }
 
   if (hasLowercase) {
-    chosenCharacters += lowercase
+    chosenCharacters += array[1]
   }
 
   if (hasNumber) {
-    chosenCharacters += number
+    chosenCharacters += array[2]
   }
 
   if (hasSpecialCharacter) {
-    chosenCharacters += specialCharacter
+    chosenCharacters += array[3]
   }
 
-  for(var i = 0; i < passwordLength; i++) {
-    password += chosenCharacters.charAt(Math.floor (Math.random() * chosenCharacters.length))
+  for (var i = 0; i < passwordLength; i++) {
+    password += chosenCharacters.charAt(Math.floor(Math.random() * chosenCharacters.length))
   }
 
-return password;
+  return password;
 
 }
 

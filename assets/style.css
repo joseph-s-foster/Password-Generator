@@ -42,12 +42,15 @@ header {
   padding: 30px 40px;
 }
 
+.card-header {
+  text-align: center;
+}
+
 .card-header::after {
   content: " ";
   display: block;
   width: 100%;
   background: #e7e9eb;
-  height: 2px;
 }
 
 .card-body {
@@ -63,7 +66,6 @@ header {
   display: block;
   width: 100%;
   background: #e7e9eb;
-  height: 2px;
 }
 
 .card-footer::after {
@@ -74,23 +76,26 @@ header {
 
 .btn {
   border: none;
-  background-color: hsl(360, 91%, 36%);
+  background-color: #007aff;
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
   color: hsl(0, 0%, 100%);
   display: inline-block;
-  font-size: 22px;
-  line-height: 22px;
+  font-size: 1.5rem;
+  line-height: 18px;
   margin: 16px 16px 16px 20px;
   padding: 14px 34px;
   text-align: center;
   cursor: pointer;
 }
 
+.btn:hover {
+  scale: 1.01;
+}
+
 button[disabled] {
   cursor: default;
-  background: #c0c7cf;
 }
 
 .float-right {
@@ -112,7 +117,7 @@ button[disabled] {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
+  border: 2px solid #c0c7cf;
   border-radius: 6px;
   resize: none;
   overflow: hidden;

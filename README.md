@@ -13,5 +13,5 @@
 https://joseph-s-foster.github.io/Password-Generator/
 
 ## Screenshot
-![Screenshot of webpage](./assets/screenshot.png)
+![Screenshot of webpage](./assets/Screenshot.png)
 
